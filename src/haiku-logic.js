@@ -25,4 +25,10 @@ export function Haiku(line1, line2, line3) {
   this.line1 = line1;
   this.line2 = line2;
   this.line3 = line3;
+  this.total = null;
+}
+
+Haiku.prototype.together = function() {
+  this.total = [this.line1, this.line2, this.line3]
+  // return [this.line1, this.line2, this.line3];
 }
