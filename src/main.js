@@ -12,10 +12,10 @@ $(document).ready(function() {
     var poem3 = $('#poem3').val();
     console.log(poem1);
     // var output = Haiku(poem);
-    var output = new Haiku(poem1, poem2, poem3)
+    var output = new Haiku(poem1, poem2, poem3);
     console.log(output);
     // output.forEach(function(element) {
-      $('#solution').append("<li>" + output.line1 + " " + output.line2  + " " + output.line3 + "</li>");
+    $('#solution').append("<li>" + output.line1 + " " + output.line2  + " " + output.line3 + "</li>");
     // });
   });
 });

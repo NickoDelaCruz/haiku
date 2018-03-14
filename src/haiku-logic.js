@@ -25,11 +25,9 @@ export class Haiku {
   }
 
   together() {
-    this.total = [this.line1, this.line2, this.line3]
+    this.total = [this.line1, this.line2, this.line3];
   }
   test(word) {
     return word+"test";
   }
 }
-
-// exports.haikuModule = Haiku;
