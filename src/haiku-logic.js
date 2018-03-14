@@ -24,10 +24,25 @@ export class Haiku {
 
   }
 
+
+
   together() {
     this.total = [this.line1, this.line2, this.line3];
   }
   test(word) {
     return word+"test";
   }
+
+  checker() {
+  if haiku.line1.length>0 && haiku.line2.length>0 && haiku.line3.length>0  {
+    console.log('yes its true')
+    return true
+  }
+    else {
+      return false
+
+    }
+  }
+
+
 }

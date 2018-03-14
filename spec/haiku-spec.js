@@ -12,6 +12,7 @@ describe('Haiku', function() {
     expect(haiku.line3).toEqual("friend");
   });
 
+
   it('should test the "total" prototype associated with Haiku' , function() {
     var haiku = new Haiku("hello","my","friend")
     haiku.together()
@@ -22,6 +23,16 @@ describe('Haiku', function() {
     var haiku = new Haiku("hello","my","friend")
     // haiku.test()
     expect(haiku.test('the')).toEqual('thetest');
+  });
+
+    it("checks if the input fields are filled", function() {
+    var haiku = new Haiku("hello","my","friend")
+    var haiku2 = new Haiku("hello","my","")
+    expect(haiku.checker()).toEqual(true)
+    expect(haiku2.checker()).toEqual(false)
+    // expect(haiku.line1.length>0).toEqual(true);
+    // expect(haiku.line2.length>0).toEqual(true);
+    // expect(haiku.line3.length>0).toEqual(true);
   });
 
 
