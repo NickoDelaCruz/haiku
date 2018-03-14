@@ -7,12 +7,15 @@ import { Haiku } from './haiku-logic';
 $(document).ready(function() {
   $('#haiku-form').submit(function(event) {
     event.preventDefault();
-    var poem = $('#poem').val();
-    console.log(poem);
-    var output = Haiku(poem);
+    var poem1 = $('#poem1').val();
+    var poem2 = $('#poem2').val();
+    var poem3 = $('#poem3').val();
+    console.log(poem1);
+    // var output = Haiku(poem);
+    var output = new Haiku(poem1, poem2, poem3)
     console.log(output);
-    output.forEach(function(element) {
-      $('#solution').append("<li>" + element + "</li>");
-    });
+    // output.forEach(function(element) {
+      $('#solution').append("<li>" + output.line1 + output.line2 + output.line3 + "</li>");
+    // });
   });
 });
