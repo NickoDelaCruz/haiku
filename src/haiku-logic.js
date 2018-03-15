@@ -35,12 +35,17 @@ export class Haiku {
   }
 
   vowelChecker() {
-    var totalVowel;
-    console.log(this.line1.match(/[aeiouAEIOU]/gi));
-    if (this.line1.match(/[aeiouAEIOU]/gi) == null)  {
+    // this.counter = 0;
+    // var totalVowel;
+    this.total = [this.line1, this.line2, this.line3];
+    var full = this.total.join()
+    console.log(22,this.line1.match(/[aeiouAEIOU]/gi));
+    console.log(full);
+    console.log(33, full.match(/[aeiouAEIOU]/gi));
+    if (full.match(/[aeiouAEIOU]/gi) === null)  {
       return this.counter
     } else {
-          return this.counter += this.line1.match(/[aeiouAEIOU]/gi).length
+          return this.counter += full.match(/[aeiouAEIOU]/gi).length
     }
     //   if
   }
