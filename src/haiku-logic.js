@@ -30,6 +30,8 @@ export class Haiku {
     if ( syllable(this.line1)==5&&syllable(this.line3)==5&&syllable(this.line2)==7 ) {
       console.log(syllable(this.line1+this.line2+this.line3))
       return "yep hiaku"
+    } else {
+      return "not a hiaku try again"
     }
   }
 
