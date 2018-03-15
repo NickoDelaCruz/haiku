@@ -12,7 +12,7 @@ $(document).ready(function() {
     var poem3 = $('#poem3').val();
     // console.log(poem1);
     // var output = Haiku(poem);
-    console.log(22)
+    // console.log(22)
     var output = new Haiku(poem1, poem2, poem3);
     // output.forEach(function(element) {
     output.vowelChecker()

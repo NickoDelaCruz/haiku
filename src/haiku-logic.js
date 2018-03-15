@@ -21,7 +21,7 @@ export class Haiku {
     this.line2 = line2;
     this.line3 = line3;
     this.total = null;
-    this.counter = null;
+    this.counter = 0;
 
   }
 
@@ -35,9 +35,22 @@ export class Haiku {
   }
 
   vowelChecker() {
-    var totalVowel = this.line1.match(/[aeiouAEIOU]/gi).length
-    return this.counter += totalVowel
+    var totalVowel;
+    console.log(this.line1.match(/[aeiouAEIOU]/gi));
+    if (this.line1.match(/[aeiouAEIOU]/gi) == null)  {
+      return this.counter
+    } else {
+          return this.counter += this.line1.match(/[aeiouAEIOU]/gi).length
+    }
+    //   if
   }
+  //
+  //
+  //
+  //
+  //   + this.line2.match(/[aeiouAEIOU]/gi).length + this.line3.match(/[aeiouAEIOU]/gi).length
+  //   return this.counter += totalVowel
+  // }
 
   checker() {
   if (this.line1.length>0 && this.line2.length>0 && this.line3.length>0)  {

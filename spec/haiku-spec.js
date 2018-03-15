@@ -38,11 +38,11 @@ describe('Haiku', function() {
   });
 
   it ("counts the vowels within our total array" , function() {
-    var haiku = new Haiku('AbA', 'b', 'c');
+    var haiku = new Haiku('AbA', 'ab', 'ac');
     haiku.vowelChecker();
     // console.log('test')
-    // console.log(haiku.counter)
-    expect(haiku.counter).toEqual(2);
+    console.log(haiku.counter)
+    expect(haiku.counter).toEqual(4);
   });
 
 
