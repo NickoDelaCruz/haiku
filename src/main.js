@@ -13,6 +13,7 @@ $(document).ready(function() {
     var output = new Haiku(poem1, poem2, poem3);
     output.vowelChecker()
     console.log(output);
+    console.log(output.total_checker())
     $('#solution').append("<li>" + output.line1 + " " + output.line2  + " " + output.line3 + "</li>");
   });
 });

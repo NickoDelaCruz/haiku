@@ -51,5 +51,10 @@ describe('Haiku', function() {
     expect(syllable('syllable')).toEqual(3);
   });
 
+  it ("counts the syllables on each field" , function() {
+    var haiku = new Haiku('An old silent pond...', 'A frog jumps into the pond,', 'splash! Silence again.');
+    expect(haiku.total_checker()).toEqual("yep hiaku");
+  });
+
 
 });
