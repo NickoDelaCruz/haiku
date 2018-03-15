@@ -4,9 +4,9 @@ import { Haiku } from './../src/haiku-logic'
 describe('Haiku', function() {
 
   it('should test whether a Haiku object is constructed with 3 lines', function() {
-    console.log('test 1');
+    // console.log('test 1');
     var haiku = new Haiku("hello","my","friend")
-    console.log('test 1.1');
+    // console.log('test 1.1');
     expect(haiku.line1).toEqual("hello");
     expect(haiku.line2).toEqual("my");
     expect(haiku.line3).toEqual("friend");
@@ -25,6 +25,8 @@ describe('Haiku', function() {
     expect(haiku.test('the')).toEqual('thetest');
   });
 
+
+
     it("checks if the input fields are filled", function() {
     var haiku = new Haiku("hello","my","friend")
     var haiku2 = new Haiku("hello","my","")
@@ -33,6 +35,14 @@ describe('Haiku', function() {
     // expect(haiku.line1.length>0).toEqual(true);
     // expect(haiku.line2.length>0).toEqual(true);
     // expect(haiku.line3.length>0).toEqual(true);
+  });
+
+  it ("counts the vowels within our total array" , function() {
+    var haiku = new Haiku('AbA', 'b', 'c');
+    haiku.vowelChecker();
+    console.log('test')
+    console.log(haiku.counter)
+    expect(haiku.counter).toEqual(2);
   });
 
 
