@@ -1,5 +1,6 @@
 // var Haiku = require('./../src/haiku-logic')
 import { Haiku } from './../src/haiku-logic'
+var syllable = require('syllable');
 
 describe('Haiku', function() {
 
@@ -43,6 +44,11 @@ describe('Haiku', function() {
     // console.log('test')
     console.log(haiku.counter)
     expect(haiku.counter).toEqual(4);
+  });
+
+  it ("counts the syllables on each field" , function() {
+    syllable('syllable');
+    expect(syllable('syllable')).toEqual(3);
   });
 
 

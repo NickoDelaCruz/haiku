@@ -10,15 +10,9 @@ $(document).ready(function() {
     var poem1 = $('#poem1').val();
     var poem2 = $('#poem2').val();
     var poem3 = $('#poem3').val();
-    // console.log(poem1);
-    // var output = Haiku(poem);
-    // console.log(22)
     var output = new Haiku(poem1, poem2, poem3);
-    // output.forEach(function(element) {
     output.vowelChecker()
     console.log(output);
-
     $('#solution').append("<li>" + output.line1 + " " + output.line2  + " " + output.line3 + "</li>");
-    // });
   });
 });
